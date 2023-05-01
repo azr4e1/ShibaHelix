@@ -1,0 +1,26 @@
+theme = 'adwaita-dark'
+
+[editor]
+# line-number = 'relative'
+mouse = true
+cursorline = true
+
+[editor.cursor-shape]
+insert = 'bar'
+normal = 'block'
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ['mode', 'spinner', 'file-name', 'file-modification-indicator', 'version-control', 'diagnostics']
+right = ['selections', 'file-type', 'file-encoding', 'position-percentage', 'position']
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.insert]
+C-space = 'completion'
