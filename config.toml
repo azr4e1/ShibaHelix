@@ -14,9 +14,9 @@ hidden = false
 
 [editor.statusline]
 separator = "|"
-left = ['spinner', 'mode', 'separator', 'file-type', 'file-encoding', 'separator', 'spacer', 'version-control']
-center = ['file-name', 'file-modification-indicator', 'diagnostics']
-right = ['primary-selection-length', 'selections', 'separator', 'spacer', 'position-percentage', 'position', 'total-line-numbers']
+left = ['spinner', 'mode', 'spacer', 'version-control']
+center = ['diagnostics', 'file-name', 'file-modification-indicator']
+right = ['primary-selection-length', 'selections', 'separator', 'position', 'spacer', 'position-percentage']
 
 [editor.indent-guides]
 render = true
@@ -25,4 +25,4 @@ render = true
 enable = true
 
 [keys.insert]
-# C-space = 'completion'
+C-space = 'completion'
