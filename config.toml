@@ -22,3 +22,6 @@ skip-levels = 0
 
 [editor.soft-wrap]
 enable = true
+
+[keys.insert]
+C-space = 'completion'
