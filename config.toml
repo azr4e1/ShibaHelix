@@ -1,16 +1,13 @@
 theme = 'adwaita-dark'
 
 [editor]
-# line-number = 'relative'
 mouse = true
 cursorline = true
 
 [editor.cursor-shape]
 insert = 'bar'
 normal = 'block'
-
-[editor.file-picker]
-hidden = false
+select = 'underline'
 
 [editor.statusline]
 separator = "|"
@@ -19,10 +16,9 @@ center = ['diagnostics', 'file-name', 'file-modification-indicator']
 right = ['primary-selection-length', 'selections', 'separator', 'position', 'spacer', 'position-percentage']
 
 [editor.indent-guides]
-render = true
+render = false
+skip-levels = 0
+# character = "⸽" # Some characters that work well: "▏", "┆", "┊", "⸽", "╎"
 
 [editor.soft-wrap]
 enable = true
-
-[keys.insert]
-C-space = 'completion'
