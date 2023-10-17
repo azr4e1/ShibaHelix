@@ -10,10 +10,10 @@ normal = 'block'
 select = 'underline'
 
 [editor.statusline]
-separator = "|"
-left = ['spinner', 'mode', 'spacer', 'version-control']
-center = ['diagnostics', 'file-name', 'file-modification-indicator']
-right = ['primary-selection-length', 'selections', 'separator', 'position', 'spacer', 'position-percentage']
+# separator = "|"
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "position-percentage"]
 
 [editor.indent-guides]
 render = false
