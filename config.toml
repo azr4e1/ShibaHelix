@@ -28,6 +28,10 @@ enable = true
 C-space = 'completion'
 
 [keys.normal.'\']
+v = [''':sh tmux split-window -h -c "{pane_current_path}" -l 25%''']
+s = [''':sh tmux split-window -v -c "{pane_current_path}" -l 25%''']
 space = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{right-of}' \; send-keys -t '{right-of}' Enter''']
-'\' = [''':sh tmux send-keys Q/# Space %% Enter O# Escape Escape Nvg.a BSpace BSpace Escape Escape \\ Space uuQ''']
-# the above is the quivalent of putting, in .tmux.conf: send-keys Q/#\s%%\rO#\e\eNvg.a\b\b\e\e\\\suuQ
+l = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{right-of}' \; send-keys -t '{right-of}' Enter''']
+k = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{up-of}' \; send-keys -t '{up-of}' Enter''']
+j = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{down-of}' \; send-keys -t '{down-of}' Enter''']
+h = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{left-of}' \; send-keys -t '{left-of}' Enter''']
