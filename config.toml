@@ -3,6 +3,7 @@ theme = 'adwaita-dark'
 [editor]
 mouse = true
 cursorline = true
+line-number = "relative"
 
 [editor.cursor-shape]
 insert = 'bar'
