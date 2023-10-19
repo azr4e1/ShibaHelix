@@ -27,6 +27,9 @@ enable = true
 [keys.insert]
 C-space = 'completion'
 
+[keys.normal.'space']
+backspace = ':reset-diff-change'
+
 [keys.normal.'\']
 v = [''':sh tmux split-window -h -c "#{pane_current_path}" -l 33%''']
 s = [''':sh tmux split-window -v -c "#{pane_current_path}" -l 33%''']
