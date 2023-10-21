@@ -29,6 +29,7 @@ C-space = 'completion'
 
 [keys.normal.'space']
 backspace = ':reset-diff-change'
+c = ':toggle-option cursorcolumn'
 
 [keys.normal.'\']
 v = [''':sh tmux split-window -h -c "#{pane_current_path}" -l 33%''']
