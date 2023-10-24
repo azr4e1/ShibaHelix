@@ -21,6 +21,9 @@ render = false
 skip-levels = 0
 # character = "⸽" # Some characters that work well: "▏", "┆", "┊", "⸽", "╎"
 
+[editor.lsp]
+display-signature-help-docs = false
+
 [editor.soft-wrap]
 enable = true
 
