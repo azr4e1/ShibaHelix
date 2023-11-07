@@ -35,9 +35,15 @@ backspace = ':reset-diff-change'
 c = ':toggle-option cursorcolumn'
 
 [keys.normal.'\']
+# create panes
 v = [''':sh tmux split-window -h -c "#{pane_current_path}" -l 33%''']
-s = [''':sh tmux split-window -v -c "#{pane_current_path}" -l 33%''']
+b = [''':sh tmux split-window -v -c "#{pane_current_path}" -l 33%''']
 space = ['extend_to_line_bounds', ''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{right-of}' \; send-keys -t '{right-of}' Enter''', 'move_visual_line_down']
+# create session
+S = [''':sh tmux new-session -d -s "repl" -c "#{pane_current_path}" && tmux switch-client -t "repl"''']
+# send to session
+s = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t "repl:1" \; send-keys -t "repl:1" Enter''']
+# send to panes
 l = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{right-of}' \; send-keys -t '{right-of}' Enter''']
 k = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{up-of}' \; send-keys -t '{up-of}' Enter''']
 j = [''':pipe-to tmux load-buffer - \; paste-buffer -dpr -t '{down-of}' \; send-keys -t '{down-of}' Enter''']
