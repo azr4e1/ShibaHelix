@@ -14,7 +14,7 @@ select = 'underline'
 # separator = "|"
 left = ["mode", "spinner", "file-name", "file-modification-indicator"]
 center = ["version-control"]
-right = ["diagnostics", "selections", "position", "position-percentage"]
+right = ["diagnostics", "register", "selections", "position", "position-percentage"]
 
 [editor.indent-guides]
 render = false
