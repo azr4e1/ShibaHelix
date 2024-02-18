@@ -30,6 +30,9 @@ enable = true
 [keys.insert]
 C-space = 'completion'
 
+[keys.normal]
+A-X = 'extend_line_above'
+
 [keys.normal.'space']
 backspace = ':reset-diff-change'
 c = ':toggle-option cursorcolumn'
