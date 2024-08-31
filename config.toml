@@ -28,7 +28,7 @@ display-signature-help-docs = false
 enable = true
 
 [keys.insert]
-C-space = 'completion'
+A-ret = 'completion'
 
 [keys.normal]
 A-X = 'extend_line_above'
